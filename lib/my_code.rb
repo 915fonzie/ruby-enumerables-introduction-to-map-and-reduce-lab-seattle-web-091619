@@ -34,7 +34,7 @@ def reduce_to_any_true(source_array)
   source_array.each do |i|
     if i
       return true
-    else
+    else if !i
       return false
     end
   end
