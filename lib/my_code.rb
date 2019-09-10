@@ -1,6 +1,5 @@
 def map_to_negativize(source_array)
   new_array = source_array.collect {|i| -1*i}
-  new_array
 end
 
 def map_to_no_change(source_array)
@@ -8,11 +7,11 @@ def map_to_no_change(source_array)
 end
 
 def map_to_double(source_array)
-  
+  new_array = source_array.collect{|i| 2*i}
 end
 
 def map_to_square(source_array)
-  
+  new_array = source_array.collect{|i| i**2}
 end
 
 def reduce_to_total(source_array)
