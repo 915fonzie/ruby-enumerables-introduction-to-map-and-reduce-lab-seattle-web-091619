@@ -15,7 +15,11 @@ def map_to_square(source_array)
 end
 
 def reduce_to_total(source_array)
-  
+  total = 0
+  source_array.each do |i|
+    total += source_array[i]
+  end
+  total
 end
 
 def reduce_to_all_true(source_array)
