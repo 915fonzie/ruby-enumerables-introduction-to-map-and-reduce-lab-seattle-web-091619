@@ -32,10 +32,10 @@ end
 
 def reduce_to_any_true(source_array)
   source_array.each do |i|
-    if i
-      return true
-    else if !i
+    if !i
       return false
+    else
+      return true
     end
   end
 end
