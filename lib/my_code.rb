@@ -1,5 +1,5 @@
 def map_to_negativize(source_array)
-  source_array.each {|i| source_array[i] = source_array[i] * -1}
+  new_array = source_array.collect {|i| -1*i}
   source_array
 end
 
