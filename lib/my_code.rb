@@ -31,13 +31,15 @@ def reduce_to_all_true(source_array)
 end
 
 def reduce_to_any_true(source_array)
+  status = false
   source_array.each do |i|
     if !i
-      return false
+      status = false
     else
-      return true
+      status =  true
     end
   end
+  status
 end
   
   
