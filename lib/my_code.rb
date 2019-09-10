@@ -14,8 +14,7 @@ def map_to_square(source_array)
   new_array = source_array.collect{|i| i**2}
 end
 
-def reduce_to_total(source_array)
-  total = 0
+def reduce_to_total(source_array, total = 0)
   source_array.each do |i|
     total += i
   end
